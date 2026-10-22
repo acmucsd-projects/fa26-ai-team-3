@@ -7,9 +7,9 @@ user_prompt = "Write a quick Python function to reverse a string."
 print("🧠 Sending prompt to Ollama...\n")
 
 try:
-    # 2. Call the model (using your downloaded llama3.1:8b)
+    # 2. Call the model (using your downloaded qwen3)
     response = ollama.chat(
-        model='llama3.1:8b', 
+        model='qwen3', 
         messages=[
             {'role': 'system', 'content': system_instruction},
             {'role': 'user', 'content': user_prompt}
