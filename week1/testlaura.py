@@ -1,7 +1,7 @@
 """Laura's Week 1 Ollama test — a mini ClearMed-style rewrite + self-check."""
 import ollama
 
-MODEL = "qwen3"  # swap to "qwen3:1.7b" if your laptop is low on RAM
+MODEL = "qwen3:1.7b"  # small enough for an 8GB Mac
 
 clinical_text = (
     "Pt discharged on metoprolol 25 mg PO BID. Hold if HR < 60. "
