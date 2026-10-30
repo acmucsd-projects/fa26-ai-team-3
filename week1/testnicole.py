@@ -17,7 +17,7 @@ try:
     )
     
     # 3. Print the result
-    print("🤖 Response: hello!")
+    print("🤖 Response:")
     print(response['message']['content'])
 
 except Exception as e:
