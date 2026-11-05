@@ -70,15 +70,38 @@ From the README. Numbers are reported **only on the frozen gold set**.
 Goal: everyone can call a model, the data is understood, the eval harness runs, and there's a **single-LLM baseline** to beat.
 
 ### Week 1 — Setup, data, metrics
-- [ ] **All:** clone repo; `pip install -r requirements.txt && pip install -e .`; run `python -m clearmed.pipeline` for one successful model call
+Everyone has their own slice this week, so nobody waits on anyone. Each person ends the week with **one visual** and **one sentence on something that surprised them**. Datasets are downloaded individually (they are git-ignored and PLABA is research-use, do not redistribute).
+
+- [ ] **All:** clone repo; `pip install -r requirements.txt && pip install -e .`; install Ollama and `ollama pull qwen3.5:2b`; make one real model call from your own agent file (e.g. `extractor.extract("...", model="ollama/qwen3.5:2b")`)
 - [ ] **All:** claim your agent + notebook in the README team table
-- [ ] **M5:** create the GitHub Projects board (one column per phase), seed it from this file
-- [ ] **M1:** download MedAESQA + confirm it loads; download MTSamples; quick EDA in `01_data_eda.ipynb` (report types, length, the 30 machine answers' quality spread, expert "nuggets")
-- [ ] **M1:** write the FHIR flattener (M4 generates ~15 Synthea patients as input) — never feed raw FHIR to the LLM
-- [ ] **M2:** download PLABA + MedQuAD; skim ~10 professional<->plain pairs in `02_retrieval.ipynb`
-- [ ] **M3:** finalize the eval harness (`src/clearmed/eval_harness.py`): Flesch-Kincaid, SMOG, jargon density, length, refusal rate — documented I/O
-- [ ] **M3:** write the task spec + "what faithful means" rubric in `docs/`
-- [ ] **M4 + M1 + M3:** lock the atom / verdict JSON schemas (`src/clearmed/schemas.py`)
+- [ ] **All:** do **not** open or explore the MedAESQA evaluation data this week. It is the eval set; M3 splits it into dev / held-out in Week 2 before anyone studies it
+
+**M1 — Extractor / data** (`01_data_eda.ipynb`)
+- [ ] Download MTSamples; EDA: report types, note length, how messy the text is; 2–3 visuals + written findings
+- [ ] Learn: what does clinical text look like? What is FHIR (flattener is Week 2)?
+
+**M2 — Simplifier / retrieval** (`02_retrieval.ipynb`)
+- [ ] Download PLABA; skim it for hard medical vocab. Write 10–20 term definitions in plain language by hand, one per entry, e.g. `{"term": "pneumonia", "aliases": [], "definition": "An infection in one or both lungs that fills the tiny air sacs with fluid or pus. It can cause cough, fever and trouble breathing."}`
+- [ ] Put them in a ChromaDB collection and query it with a term (e.g. "high blood pressure") from Python; try words that are not in any entry to see meaning-based matching
+- [ ] Learn: what is an embedding? What is ChromaDB for?
+
+**M3 — Verifier / eval** (`03_verifier_calibration.ipynb`)
+- [ ] Write the "what faithful means" rubric (rules + examples) in `docs/`. Decide how omissions are treated (faithful = 1, unfaithful = 0). Example: given "Furosemide 40 mg daily", "Potassium 3.1 (low)": Draft A "Take your water pill, furosemide, 40 mg each day. Your potassium is a little low." is faithful; Draft B "Take your water pill 40 mg twice a day." is unfaithful (wrong dose); Draft C "Take your water pill each day." has omissions (dose, low potassium)
+- [ ] Hand-grade ~10 PLABA pairs (technical text vs. plain rewrite) against your rubric, run the draft prompt in `agents/verifier.py` on them, and note where it disagrees with you
+- [ ] Learn: how does prompting work? What is Cohen's kappa (computing it is Week 4)? Optional: FActScore
+
+**M4 — Refiner / experiments** (a new notebook)
+- [ ] Confirm the default model is qwen (`DEFAULT_MODEL` in `src/clearmed/models.py`) and everyone can run it
+- [ ] Write the single-LLM baseline (one prompt, e.g. "explain this to a patient in plain language") on 3 fake clinical notes, saving output + seconds. This is the thing the pipeline has to beat
+- [ ] Run each starter agent one at a time on one note (`extract`, `simplify`, `verify`, `refine`, `polish`, passing `model="ollama/qwen3.5:2b"`); save each output + seconds. Then try the whole graph (uncomment the `invoke` line in `pipeline.py`) on the 3 notes. The starter agents are rough and a 2B model can be slow or return broken JSON, so it may stall or fail: note where and why. That is a finding, not a bug to hide
+- [ ] Learn: what is LangGraph (basics)? A baseline? An ablation?
+
+**M5 — Readability** (`05_readability.ipynb`)
+- [ ] Use `readability_scores()` / `meets_readability_target()` from `eval_harness.py`: write 2 versions of one sentence (jargon-heavy, plain), score both, compare
+- [ ] Load ~20 PLABA pairs; score both sides of every pair; chart grade levels with a line at 8
+- [ ] Learn: Flesch-Kincaid Grade Level vs. Flesch Reading Ease; why health materials target 6th–8th grade; what `textstat` does
+
+**M4 + M1 + M3 (short meeting):** lock the atom / verdict JSON schemas (`src/clearmed/schemas.py`)
 
 ### Week 2 — Baseline + frozen gold set  _(lighter week)_
 - [ ] **M5 + M1:** curate ~30 hand-picked (source -> ideal explanation) examples

@@ -13,7 +13,7 @@ try:
     # 2. Call the model (using your downloaded qwen3)
     start = time.time()
     response = ollama.chat(
-        model='qwen3', 
+        model='qwen3.5:2b',
         messages=[
             {'role': 'system', 'content': system_instruction},
             {'role': 'user', 'content': user_prompt}
