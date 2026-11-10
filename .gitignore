@@ -25,3 +25,4 @@ data/*
 *.pt
 *.faiss
 chroma/
+data/mtsamples.csv
