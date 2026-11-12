@@ -19,6 +19,7 @@ data/*
 !data/.gitkeep
 !data/README.md
 !data/MedAESQA_methods_M1-M30.xlsx
+!data/plaba/data.json
 
 # Model checkpoints / vector indexes
 *.ckpt
