@@ -19,10 +19,10 @@ data/*
 !data/.gitkeep
 !data/README.md
 !data/MedAESQA_methods_M1-M30.xlsx
+!data/mtsamples.csv
 
 # Model checkpoints / vector indexes
 *.ckpt
 *.pt
 *.faiss
 chroma/
-data/mtsamples.csv
