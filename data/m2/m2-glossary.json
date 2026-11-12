@@ -1,0 +1,352 @@
+[
+  {
+    "term": "Peripheral nerves",
+    "definition": "nerves outside the brain and spinal cord",
+    "question_id": "1",
+    "pmid": "15902691",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Spasm",
+    "definition": "sudden, involuntary muscle contraction",
+    "question_id": "1",
+    "pmid": "15902691",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Limited laboratory screen",
+    "definition": "a basic set of blood tests",
+    "question_id": "1",
+    "pmid": "15902691",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Therapeutic trials",
+    "definition": "tests to see if a treatment works",
+    "question_id": "1",
+    "pmid": "15902691",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Side-effect profile",
+    "definition": "the list of possible side effects of a drug",
+    "question_id": "1",
+    "pmid": "15902691",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Membrane-stabilizing drugs",
+    "definition": "medications that prevent nerve signals from causing muscle spasms",
+    "question_id": "1",
+    "pmid": "15902691",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Pathophysiology",
+    "definition": "the way a disease or condition affects the body",
+    "question_id": "1",
+    "pmid": "15902691",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Urinary incontinence",
+    "definition": "The inability to control your bladder.",
+    "question_id": "2",
+    "pmid": "15316838",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Stress urinary incontinence (SUI)",
+    "definition": "The most common type of bladder control issue in women.",
+    "question_id": "2",
+    "pmid": "15316838",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Neurotransmitters",
+    "definition": "Chemical messengers that help control bladder function.",
+    "question_id": "2",
+    "pmid": "15316838",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Serotonin",
+    "definition": "A chemical messenger involved in controlling bladder function.",
+    "question_id": "2",
+    "pmid": "15316838",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Norepinephrine",
+    "definition": "Another chemical messenger involved in controlling bladder function.",
+    "question_id": "2",
+    "pmid": "15316838",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Pudendal somatic motor nucleus",
+    "definition": "A specific part of the spinal cord involved in bladder control.",
+    "question_id": "2",
+    "pmid": "15316838",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Central neural control",
+    "definition": "The brain's role in controlling bladder function.",
+    "question_id": "2",
+    "pmid": "15316838",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Reuptake inhibition",
+    "definition": "A process that increases the amount of chemical messengers available for use.",
+    "question_id": "2",
+    "pmid": "15316838",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Hyperkalemia",
+    "definition": "A condition where the potassium level in the blood is higher than normal.",
+    "question_id": "3",
+    "pmid": "16445274",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Potassium homeostasis",
+    "definition": "The normal potassium balance in the body.",
+    "question_id": "3",
+    "pmid": "16445274",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Diabetic nephropathy",
+    "definition": "Kidney diseases caused by diabetes.",
+    "question_id": "3",
+    "pmid": "16445274",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Electrocardiographic changes",
+    "definition": "EKG changes that are typically seen with high potassium levels.",
+    "question_id": "3",
+    "pmid": "16445274",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Osmolarity",
+    "definition": "The kidney's ability to balance water in urine.",
+    "question_id": "3",
+    "pmid": "16445274",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Creatinine",
+    "definition": "A waste product from muscles.",
+    "question_id": "3",
+    "pmid": "16445274",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Arrhythmias",
+    "definition": "Abnormal heartbeats.",
+    "question_id": "3",
+    "pmid": "16445274",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Beta2 agonists",
+    "definition": "Medicines called beta2 agonists.",
+    "question_id": "3",
+    "pmid": "16445274",
+    "review_status": "unverified"
+  },
+  {
+    "term": "IDDM",
+    "definition": "Insulin-Dependent Diabetes Mellitus, a type of diabetes requiring insulin",
+    "question_id": "4",
+    "pmid": "9803200",
+    "review_status": "unverified"
+  },
+  {
+    "term": "NIDDM",
+    "definition": "Non-Insulin-Dependent Diabetes Mellitus, a type of diabetes not requiring insulin",
+    "question_id": "4",
+    "pmid": "9803200",
+    "review_status": "unverified"
+  },
+  {
+    "term": "fasting plasma glucose",
+    "definition": "blood sugar level measured after an overnight fast",
+    "question_id": "4",
+    "pmid": "9803200",
+    "review_status": "unverified"
+  },
+  {
+    "term": "hyperglycemia",
+    "definition": "high blood sugar levels",
+    "question_id": "4",
+    "pmid": "9803200",
+    "review_status": "unverified"
+  },
+  {
+    "term": "risk factors",
+    "definition": "factors that increase the chance of developing diabetes",
+    "question_id": "4",
+    "pmid": "9803200",
+    "review_status": "unverified"
+  },
+  {
+    "term": "hypertriglyceridemia",
+    "definition": "high levels of triglycerides in the blood",
+    "question_id": "4",
+    "pmid": "9803200",
+    "review_status": "unverified"
+  },
+  {
+    "term": "impaired glucose homeostasis",
+    "definition": "previous evidence of blood sugar imbalance",
+    "question_id": "4",
+    "pmid": "9803200",
+    "review_status": "unverified"
+  },
+  {
+    "term": "complications",
+    "definition": "health problems caused by diabetes",
+    "question_id": "4",
+    "pmid": "9803200",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Arthroscopic treatment",
+    "definition": "Minimally-invasive surgery using fine instruments to treat conditions inside a joint.",
+    "question_id": "5",
+    "pmid": "21636864",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Popliteal cysts",
+    "definition": "Abnormal enlargements of the bursa (a fluid-filled sac) behind the knee.",
+    "question_id": "5",
+    "pmid": "21636864",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Magnetic resonance imaging",
+    "definition": "A type of imaging test that uses magnetic fields and radio waves to create detailed images of the body.",
+    "question_id": "5",
+    "pmid": "21636864",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Valvular opening",
+    "definition": "A one-way valve that allows fluid to flow out of the cyst but not back in.",
+    "question_id": "5",
+    "pmid": "21636864",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Intra-articular pathology",
+    "definition": "Damage or disease within the joint, such as cartilage degeneration or meniscus tears.",
+    "question_id": "5",
+    "pmid": "21636864",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Rauschning and Lindgren criteria",
+    "definition": "Specific guidelines used to evaluate knee joint symptoms and treatment outcomes.",
+    "question_id": "5",
+    "pmid": "21636864",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Cartilage degeneration",
+    "definition": "Wearing away of the cartilage that cushions the joints, leading to pain and stiffness.",
+    "question_id": "5",
+    "pmid": "21636864",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Meniscus tear",
+    "definition": "A tear in the cartilage that acts as a shock absorber in the knee, causing pain and instability.",
+    "question_id": "5",
+    "pmid": "21636864",
+    "review_status": "unverified"
+  },
+  {
+    "term": "hyperthyroidism",
+    "definition": "overactive thyroid",
+    "question_id": "6",
+    "pmid": "16127951",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Graves' disease",
+    "definition": "a disease in which infection-preventing cells attack healthy cells",
+    "question_id": "6",
+    "pmid": "16127951",
+    "review_status": "unverified"
+  },
+  {
+    "term": "thyroiditis",
+    "definition": "thyroid inflammation",
+    "question_id": "6",
+    "pmid": "16127951",
+    "review_status": "unverified"
+  },
+  {
+    "term": "toxic multinodular goiter",
+    "definition": "one or more glandular growths making extra thyroid hormone",
+    "question_id": "6",
+    "pmid": "16127951",
+    "review_status": "unverified"
+  },
+  {
+    "term": "toxic adenoma",
+    "definition": "a single growth making extra thyroid hormone",
+    "question_id": "6",
+    "pmid": "16127951",
+    "review_status": "unverified"
+  },
+  {
+    "term": "thyroid-stimulating hormone",
+    "definition": "hormones that act as messengers to the thyroid",
+    "question_id": "6",
+    "pmid": "16127951",
+    "review_status": "unverified"
+  },
+  {
+    "term": "radionuclide uptake",
+    "definition": "test to measure thyroid function",
+    "question_id": "6",
+    "pmid": "16127951",
+    "review_status": "unverified"
+  },
+  {
+    "term": "thyroidectomy",
+    "definition": "thyroid removal",
+    "question_id": "6",
+    "pmid": "16127951",
+    "review_status": "unverified"
+  },
+  {
+    "term": "streptococcal tonsillopharyngitis",
+    "definition": "Infection of the throat and tonsils caused by streptococcus bacteria",
+    "question_id": "7",
+    "pmid": "7864482",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Group A beta-hemolytic streptococci (GAS)",
+    "definition": "A type of streptococcus bacteria that commonly causes throat infections",
+    "question_id": "7",
+    "pmid": "7864482",
+    "review_status": "unverified"
+  },
+  {
+    "term": "Neisseria gonorrhea",
+    "definition": "A bacteria that causes sexually transmitted infections",
+    "question_id": "7",
+    "pmid": "7864482",
+    "review_status": "unverified"
+  }
+]
