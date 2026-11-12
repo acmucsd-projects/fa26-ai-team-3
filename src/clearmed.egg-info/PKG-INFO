@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: clearmed
+Version: 0.0.1
+Summary: Multi-agent system for faithful, patient-friendly medical explanations
+Requires-Python: >=3.10
