@@ -1,15 +1,19 @@
+import sys
+import time
 import ollama
 
 # 1. Define your prompt and system instructions
 system_instruction = "You are a helpful, concise coding assistant."
-user_prompt = "Write a quick Python function to reverse a string."
+# Pass a prompt on the command line, or fall back to the default
+user_prompt = " ".join(sys.argv[1:]) or "Write a quick Python function to reverse a string."
 
 print("🧠 Sending prompt to Ollama...\n")
 
 try:
     # 2. Call the model (using your downloaded qwen3)
+    start = time.time()
     response = ollama.chat(
-        model='qwen3', 
+        model='qwen3.5:2b',
         messages=[
             {'role': 'system', 'content': system_instruction},
             {'role': 'user', 'content': user_prompt}
@@ -19,6 +23,7 @@ try:
     # 3. Print the result
     print("🤖 Response:")
     print(response['message']['content'])
+    print(f"\n⏱️ Took {time.time() - start:.2f}s")
 
 except Exception as e:
     print(f"❌ Error connecting to Ollama: {e}")
