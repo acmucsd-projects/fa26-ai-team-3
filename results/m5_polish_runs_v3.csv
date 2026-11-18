@@ -1,0 +1,329 @@
+row,id,baseline_model,version,seconds,polished
+0,15902691,qwen3.5:2b,v3,7.2,"Your muscles have suddenly tightened and squeezed. This causes pain and discomfort. Doctors don't know exactly why this happens, but it might be related to your medical history, exercise, or blood tests. 
+
+These cramps are not serious, but they can be unpleasant. Doctors will look at your past health, listen to your body, and check some blood tests to figure out what's causing them. 
+
+There isn't one medicine that works for everyone. Quinine sulfate was once a good option, but it can have side effects. Newer medications that calm nerve membranes seem to work similarly, but they aren't fully proven yet. 
+
+Doctors are still researching to find medicines that work well without causing serious side effects. 
+
+It's likely just a common condition, and while it's not a life-threatening emergency, it can affect your daily life. Doctors will try different treatments cautiously until they find a better solution. 
+"
+1,30838456,qwen3.5:2b,v3,10.9,"This drug is called a **Serotonin and Norepinephrine Reuptake Inhibitor (SNRI)**.  It helps your brain send messages better.  
+Messages are like letters that travel between parts of your brain. Sometimes, these messages get stuck. 
+This drug increases the supply of these messages. 
+It helps with two types of messages: **serotonin** (mood and sleep) and **norepinephrine** (focus, energy, and movement). 
+There is a special version called **Duloxetine**. 
+It has a ""balanced profile"" meaning it affects both serotonin and norepinephrine in equal amounts. 
+This helps regulate your mood and physical symptoms together. 
+Duloxetine can affect how some other medicines are broken down in your liver. 
+If you take it with certain medicines, your levels might change too much. 
+The doctor will need to watch closely and may need to adjust your dose. 
+Common side effects include nausea, dry mouth, dizziness, constipation, trouble sleeping, lack of energy, and sometimes a temporary rise in blood pressure. 
+Duloxetine is FDA-approved to treat pain caused by diabetes or nerve damage. 
+It also helps with chronic fibromyalgia and musculoskeletal pain. 
+Doctors have found that Duloxetine works just as well for treating **Major Depressive Disorder (MDD)** as some other popular antidepressants. 
+It is important to remember that there are three versions of this drug: **Sertraline, Paroxetine, and Fluoxetine**. 
+All three versions have a risk for **Serotonin Syndrome** if combined with certain other medications (like MAOIs). 
+This means you should never take an antidepressant from *any* class in this family while on one that affects these messages. 
+Your doctor will make sure no such combination occurs. 
+If you are considering this medication, talk to your doctor. 
+They can help you understand if it is right for you. 
+*Disclaimer: I am an AI assistant. This explanation is for educational purposes based on the text you provided and does not constitute medical advice. Always follow the instructions given directly by your prescribing physician.* 
+"
+2,16445274,qwen3.5:2b,v3,8.0,"Your heart needs potassium to beat properly.  Too much potassium (hyperkalemia) can make your heart stop working.  This is serious, but it can be managed.
+
+The note explains why your potassium levels might be high:
+
+*   Medications can change how your kidneys handle potassium.
+*   Illness or dehydration can make it hard to get rid of potassium through your urine.
+*   Diabetes can cause long-term kidney problems, leading to high potassium.
+
+If you have signs of heart trouble (like an irregular heartbeat), this is life-threatening.  A sudden jump in potassium levels confirms this risk.
+
+Doctors will check your urine potassium levels, how well your kidneys are filtering waste (creatinine), and your body's water balance (osmolarity).  This will help them figure out the cause and choose the right treatment.
+
+Treatment depends on why your potassium levels are high.  In the meantime, doctors may give you calcium through an IV to protect your heart.  Insulin and glucose, or beta-agonists, can also help move potassium out of your cells.
+
+After stabilizing your heart, doctors will focus on lowering your potassium levels.  This might involve dialysis or specific medications, depending on the cause.
+
+High potassium can affect your heart's rhythm.  Early treatment is important to protect your heart. 
+"
+3,9803200,qwen3.5:2b,v3,6.7,"Diabetes treatment is changing. Doctors use new names for the two types of diabetes: Type 1 and Type 2. 
+Doctors now use just two blood tests to diagnose diabetes. If a fasting blood sugar test shows a level of 126 mg/dL (7 mmol/L) or higher, it confirms the diagnosis. 
+Most people should start screening for diabetes at age 45.  Every few years (every three years), unless you have specific risk factors. 
+If you are overweight or obese, have a family member with diabetes, high blood pressure, high triglycerides, or a history of high insulin resistance, you should start screening for diabetes sooner. 
+Early detection helps prevent serious health problems in the future, such as heart issues, eye damage, and nerve damage. 
+If you are 45 or older, ask your doctor about checking for diabetes. If you have a family member with diabetes, discuss screening sooner than usual. 
+Maintaining a healthy weight helps keep blood sugar levels in check and reduces the risk of complications. 
+"
+4,21636864,qwen3.5:2b,v3,7.3,"This chart explains what happened to 11 people with knee problems.  They had a popping or swelling feeling near the back of their knee (called a popliteal cyst).  Doctors used a small camera and a tiny tool called arthroscopy to remove the cyst.  They also fixed any other problems they found, like a torn meniscus or broken cartilage.  They closed off a valve in the knee to prevent fluid from leaking back into the joint.  Almost everyone saw improvement right after the surgery.  After a few months or years, only a small number of people had new cysts.  There were no major complications like infection or bleeding.  One patient had a valve that wasn't closed and didn't know about it.  Doctors are confident that arthroscopic treatment is safe and effective.  Fixing the cysts helps symptoms disappear quickly.  However, they need to check for and correct valves properly during surgery to improve long-term results.  If you ever feel a pop in the back of your knee again and it sounds like fluid draining, please come back to see us.  Early treatment usually means faster relief. 
+"
+5,16127951,qwen3.5:2b,v3,16.7,"This note explains how doctors figure out why your thyroid isn't working properly and what they will do about it. 
+
+Doctors need to know:
+* What is causing the problem? Is it something specific like a virus (thyroiditis), a build-up of iodine in your thyroid, or a medication affecting you? Or is it called Graves' disease? This is often the most common cause.
+* How do we find out? Doctors start by measuring how much ""TSH"" makes itself. If that number is low, we get worried something is wrong. Sometimes, doctors use a special scan (like the radionuclide uptake test) to see which of these possibilities it is.
+
+The treatment depends entirely on the specific cause of your condition.
+
+* If it's transient hyperthyroidism (caused by thyroiditis), treating your symptoms usually isn't necessary because the thyroid will naturally calm down on its own in a few weeks.
+* If it's Graves', toxic multinodular goiter, or toxic adenoma, these are conditions where the thyroid is ""overstimulated."" There are three main ways doctors treat these:
+    1. Radioactive Iodine: This is the most common treatment in the US for people who don't have side effects from other medicines. It's like using a radioactive tracer that is safely absorbed by your thyroid to stop it from working (though you lose some of your iodine, which helps the overactive thyroid).
+    2. Medications: Drugs designed to block the thyroid from taking in too much hormone.
+    3. Surgery: Removing a portion or all of your thyroid gland. Doctors might recommend this if radioactive iodine doesn't work for you, if you have other conditions that make the radiation unsafe, or if the tumor is squeezing on your airway.
+
+Special care groups:
+* Pregnant and breastfeeding women: Thyroid hormones pass through milk or are needed in very high levels during pregnancy, so doctors must be extra careful with drug dosages or choosing between surgery/radiation vs. medication.
+* Eye-related Graves' disease (Ophthalmopathy): If your condition is causing eye irritation or swelling, the treatment approach might need to differ to protect your eyes.
+* Medication Side Effects: People taking certain heart medications (like amiodarone) are at higher risk for hyperthyroidism from side effects. This requires careful monitoring.
+
+Your input matters:
+Doctors need to weigh your personal desires (for example, how much surgery you want versus how long you can tolerate pills). They also use dose monitoring to make sure your treatment plan stays safe over time.
+
+In short: The best treatment for hyperthyroidism depends on *why* your thyroid is reacting this way. For many common cases, radioactive iodine is the go-to, but if you're pregnant, have eye issues, or have other health conditions, we will tailor the specific plan to keep your health safe and happy. 
+
+Does that make sense? If there are any specific symptoms you are worried about right now, please tell me, and I can help you figure out how they relate to this note. 
+"
+6,15156437,qwen3.5:2b,v3,6.6,"Cephalosporins are a type of antibiotic that is often more effective than penicillin for treating tonsillitis (inflammation of the throat and back of the tongue). 
+
+The study found that cephalosporins are about twice as likely to make you better than penicillin. 
+
+The study looked at 9 different studies with over 2,000 patients. 
+
+The study found that:
+
+*   Patients who take cephalosporins are more likely to be cured of the bacteria causing the infection.
+*   Patients who take cephalosporins are more likely to feel better.
+
+The study also looked at different ways to make sure the results were accurate. 
+
+Even when the study looked at different ways to do the study, the results stayed the same. 
+
+Your doctor will consider your specific situation when deciding which antibiotic to use. 
+
+If your doctor has chosen penicillin, it is likely because they believe it works best in your specific case. 
+
+Cephalosporins are a good alternative to penicillin. 
+
+If you have an allergy to penicillin, your doctor may prescribe a cephalosporin. 
+"
+7,1000139,qwen3.5:2b,v3,5.0,"This note explains how certain medicines work for mental health issues. Doctors studied two medicines, Clozapine and Perphenazine, to see how well they treat serious mental illnesses like psychosis. 
+
+Clozapine blocks brain signals that use Nerve Growth Factor (NA) messengers. It does not block those same signals for dopamine (DA). 
+
+Perphenazine blocks dopamine (DA) messengers. It does not block Nerve Growth Factor as strongly.
+
+Because of these different chemical behaviors, the study showed that Clozapine works by stopping symptoms and having calming effects. Perphenazine works by affecting dopamine.
+
+The study showed that knowing how a medicine works inside the body is more important than its chemical shape. This is because the medicine's chemical makeup determines how it calms the mind and treats symptoms. 
+"
+8,7698623,qwen3.5:2b,v3,6.2,"We found 242 small objects in your esophagus and stomach. These objects can hurt your heart if not removed. 
+
+We used a special camera called a ""panendoscope"" to remove the objects. This method is very safe. Only 0.4% of patients needed surgery. 
+
+The objects in your throat were removed immediately to prevent blockage. Objects in your stomach may pass through on their own. 
+
+If an object is blocking food from going up, it needs to be removed quickly. 
+
+Button batteries are dangerous and need to be removed right away. 
+
+Most patients had the procedure without anesthesia. 
+
+We used breathing tubes for some patients. 
+
+We used a simulation to move the objects before removing them. This helps make sure you don't have a problem later. 
+
+This treatment is safe and easy. We just need to watch your throat for the next day or two. 
+
+Is there anything specific you would like to ask me about this? 
+"
+9,3068693,qwen3.5:2b,v3,6.7,"This note explains why your fingers hurt. Most cases are simple and fixable. 
+Rest and ice help. 
+If your finger pain is from an infection, it can spread. 
+Antibiotics or draining pus can help. 
+If the doctor suspects a serious infection, they might call in a specialist. 
+Some pain means something is wrong. 
+Blood flow issues can cause pain. 
+Nerve problems can cause pain too. 
+Carpal Tunnel Syndrome is a common nerve problem. 
+Sometimes, pain isn't about your fingers. 
+Systemic conditions or early signs of illnesses can cause pain. 
+Sometimes, pain is caused by how nerves connect. 
+Don't ignore pain. 
+See a doctor if your pain lasts more than a few days. 
+An Occupational Therapist can help you regain hand function. 
+This explanation is for educational purposes only. 
+It should not replace the advice of a doctor. 
+"
+10,15902691,gemma2:2b,v3,3.9,"Muscle cramps are painful, sudden spasms in your muscles. 
+They can feel different from other muscle pain. 
+Doctors may look at your medical history and how you feel to figure out why you're having cramps. 
+They might also run a blood test. 
+Not all cramps are serious. 
+Doctors are still figuring out the best treatment options. 
+Quinine sulfate is one option, but it can have side effects. 
+More research is needed to learn more about muscle cramps. 
+Your doctor is trying to figure out why you're having cramps and how to help you feel better. 
+"
+11,30838456,gemma2:2b,v3,5.8,"Antidepressants are a type of medicine that helps balance brain chemicals called serotonin and norepinephrine. 
+
+Duloxetine is a type of antidepressant called a ""reuptake inhibitor."" It's like a key fitting into a lock, helping more serotonin and norepinephrine get into the brain. 
+
+It's a ""balanced"" inhibitor, affecting these chemicals in a pretty even way (roughly 10:1 ratio). 
+
+It can also affect other chemicals in the body. It slows down the breakdown of some chemicals in your body (CYP2D6), so it's important to be careful if you're also taking certain medications that might interact.
+
+Common side effects include nausea, dry mouth, dizziness, constipation, insomnia, feeling tired, and high blood pressure.
+
+It's been tested in many patients with depression, and it shows comparable results to other popular antidepressants. 
+
+It's also been approved for other conditions like diabetic neuropathy, fibromyalgia, and musculoskeletal pain. 
+
+It's important to talk to your doctor before starting or changing medications. 
+"
+12,16445274,gemma2:2b,v3,6.2,"Your potassium levels are important.  Your body needs a balance of potassium in your blood.  Sometimes, too much potassium can be dangerous.  It can affect your heart rhythm.
+
+Your kidneys usually filter out excess potassium.  If they're not working well, they might not get rid of all the potassium.  Your body also has ways to move potassium from your blood to your cells.  Sometimes, these mechanisms can get messed up.
+
+High potassium levels can cause changes on your EKG, which is a test that checks your heart rhythm.  This can be a sign that it's becoming dangerous.
+
+We can figure out why your potassium levels are high.  We'll test your urine, blood, and maybe other things to see what's going on.
+
+We can use medications like insulin and glucose to quickly lower your potassium levels.  We might also use sodium polystyrene to lower your potassium levels over time.  If you're having changes to your heart rhythm, we might give you calcium to help your heart beat normally. 
+
+We'll work together to get your potassium levels back in balance and keep you healthy! 
+"
+13,9803200,gemma2:2b,v3,6.3,"Diabetes is a condition where your body doesn't use sugar properly. 
+
+There are two main types of diabetes: Type 1 and Type 2. 
+
+Type 1 diabetes happens when your body can't make insulin. Insulin helps your body use sugar. 
+
+Type 2 diabetes happens when your body doesn't use insulin very well. 
+
+Instead of using ""IDDM"" and ""NIDDM"", we use ""Type 1"" and ""Type 2"". 
+
+We can now diagnose diabetes just by looking at your blood sugar levels. 
+
+We check your blood sugar level at fasting. 
+
+We use a blood sugar level of 126 mg/dL or higher to confirm the diagnosis. 
+
+These changes help us:
+
+* Catch diabetes sooner. 
+* Start treatment sooner. 
+
+Here's the schedule for screening:
+
+* Start screening at 45 years old. 
+* Repeat screenings every 3 years for those without risk factors. 
+* More frequent screenings for those with risk factors. 
+
+Early detection is key! 
+
+Do you have any questions or concerns? 
+"
+14,21636864,gemma2:2b,v3,5.1,"Your doctor performed arthroscopic surgery to treat your popliteal cyst. 
+They used a special camera called arthroscopy to look inside your knee. 
+The surgery was successful. 
+Your doctor used an MRI to confirm the diagnosis. 
+The MRI showed your popliteal cyst and checked if your knee cartilage was damaged and if your meniscus was injured. 
+Your doctor followed the Rauschning and Lindgren criteria to evaluate the severity of your popliteal cyst and knee issues. 
+Many patients saw improvement after the procedure. 
+Recurrent cases are rare. 
+The surgery didn't fix all the problems. 
+In one patient, they couldn't fix a valve in your knee that wasn't completely open, which may have affected the outcome. 
+This surgery is effective and safe for treating popliteal cysts. 
+Your doctor feels this kind of surgery can help you feel better. 
+"
+15,16127951,gemma2:2b,v3,9.0,"Hyperthyroidism happens when your body makes too much thyroid hormone. It's like your car's engine is running too fast. 
+
+Graves' disease is the most common cause. It happens when your body's immune system goes haywire. 
+
+Thyroiditis is inflammation of your thyroid gland. It usually causes temporary hyperthyroidism. 
+
+Goiter, or an enlarged thyroid, can sometimes cause hyperthyroidism. 
+
+Some medications can cause hyperthyroidism as a side effect. 
+
+To figure out if you have hyperthyroidism, we use a thyroid-stimulating hormone test. 
+
+If the test results are unclear, we use a radionuclide uptake test. 
+
+Treatment for hyperthyroidism depends on the cause. 
+
+For Graves' disease, we can treat it with medications (antithyroid drugs) or surgery. 
+
+For thyroiditis, we can treat it with medications to relieve symptoms. 
+
+For goiter, we can try medications and sometimes surgery to shrink the thyroid gland. 
+
+For medications, we need to consider the specific medication and its effects. 
+
+Special care is needed for pregnant and breastfeeding women. 
+
+Graves' ophthalmopathy causes swelling in your eyes. 
+
+Amiodarone-induced hyperthyroidism happens when a heart medication called amiodarone is taken. 
+
+We always consider your wishes when choosing the best treatment plan. 
+
+Close monitoring of medication doses is important to make sure the treatment works well for you. 
+"
+16,15156437,gemma2:2b,v3,3.9,"Your tonsillitis treatment will use cephalosporins. 
+We compared cephalosporins to penicillin to see which was better. 
+Many studies showed cephalosporins were more effective. 
+The study showed cephalosporins were almost twice as likely to cure your tonsillitis as penicillin. 
+Cephalosporins also helped your symptoms improve. 
+Penicillin was not as effective. 
+This means cephalosporins are a good choice for treating your tonsillitis. 
+Do you have any questions about this information? 
+"
+17,1000139,gemma2:2b,v3,6.5,"This note explains how some medicines work. 
+They are called neuroleptics, sometimes called antipsychotics. 
+They help treat mental illnesses like schizophrenia. 
+We know the chemical makeup of these medicines, but we don't always know how well they will work in each person. 
+The note suggests we should look at how the medicine affects the brain. 
+It focuses on the balance of two chemical messengers, dopamine (DA) and norepinephrine (NA). 
+Two medicines, clozapine and perphenazine, were tested on patients with different mental illnesses. 
+Clozapine affects the balance of DA and NA differently than perphenazine. 
+This means clozapine works better in some parts of the brain. 
+Perphenazine works better in others. 
+The note suggests that the way a medicine works in the brain is a better predictor of how well it will work in a patient than just knowing what it's made of. 
+This research helps us understand that the *how* the medicine works in the brain is a more accurate indicator of its effectiveness. 
+Do you have any questions? 
+"
+18,7698623,gemma2:2b,v3,6.7,"You have small objects stuck in your stomach and throat. Doctors call these ""foreign bodies."" 
+
+To remove the objects, doctors used a thin tube called an endoscope. This was the most common way to remove the objects. 
+
+A tiny percentage of cases needed surgery, which was very successful with no problems. 
+
+If something is stuck in your esophagus (the tube that carries food from your throat to your stomach), doctors need to remove it immediately. 
+
+If something is stuck in your esophagus, it needs to be removed immediately if it's in the top part or within 12 hours if it's at the bottom. 
+
+Meat that's stuck in your esophagus needs to be removed ASAP as it can block the passage and cause a serious problem. 
+
+If a sharp object is stuck, it's tricky and may need special preparation before removing it. 
+
+Button batteries are very dangerous if they get stuck. We need to remove them right away. 
+
+The best tool for removing these objects is a panendoscope. 
+
+You've been through a lot, but you're doing great.  You can get these foreign bodies removed without complications. 
+
+Do you have any questions about this information? 
+"
+19,3068693,gemma2:2b,v3,6.2,"Your doctor wants to understand why your finger hurts. They'll ask about the reason for the pain. Was it an accident?  Is it related to an infection?  They'll also look at your finger for swelling, redness, warmth, and other signs of problems.  Sometimes, X-rays or blood tests might be needed to get a better idea. 
+
+If your finger is a minor injury like a sprain or strain, rest and exercises can help it heal.  If your finger has an infection, antibiotics will be used to fight it.  Sometimes, the affected area might need to be drained. 
+
+If your finger pain is a sign of something serious, like a blockage in your blood vessels, your doctor will need to address it quickly to keep your finger from losing function. 
+
+Sometimes, your doctor might refer you to a specialist like a hand surgeon, rheumatologist, or neurologist if the problem is complex.  An occupational therapist can help you regain function and adapt your daily activities. 
+
+Keep your doctor updated if your finger pain continues or gets worse. 
+"
