@@ -6,7 +6,7 @@ no paid trial credits. Nobody needs to sign up for or pay for anything.
 Setup (one-time, per person):
     1. Install Ollama: https://ollama.com/download
     2. Pull a small model that runs on a normal laptop, e.g.:
-           ollama pull gemma2:2b
+           ollama pull qwen3.5:2b
        (swap for a different model to compare on the leaderboard, e.g. llama3.2 or mistral —
        just make sure everyone can actually run it locally before the team commits to it)
     3. Leave the Ollama app/service running in the background — that's the local server
@@ -24,7 +24,7 @@ from __future__ import annotations
 
 import litellm
 
-DEFAULT_MODEL = "ollama/gemma2:2b"  # any local Ollama model string — free, no API key needed
+DEFAULT_MODEL = "ollama/qwen3.5:2b"  # any local Ollama model string — free, no API key needed
 
 
 def call_model(system: str, user: str, model: str = DEFAULT_MODEL, temperature: float = 0.0) -> str:

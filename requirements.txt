@@ -5,7 +5,7 @@ litellm               # one interface to every model — we point it ONLY at loc
 
 # ── Local models (FREE — no API keys, no paid trial credits, ever) ─────
 # Install Ollama separately (not a pip package): https://ollama.com/download
-# Then `ollama pull gemma2:2b` (or another small model) and leave it running locally.
+# Then `ollama pull qwen3.5:2b` (or another small model) and leave it running locally.
 
 # ── RAG / retrieval ────────────────────────────────────────────────────
 chromadb              # default embedding function is a bundled LOCAL model — free, no API key

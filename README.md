@@ -139,7 +139,7 @@ Two decisions that will save weeks:
 |---|---|---|
 | Language / env | Python 3.10+, virtualenv or Colab | Standard; Colab gives a free GPU if your laptop can't run a local model |
 | Model access | `litellm` pointed at `ollama/<model>` | One API shape, but always routes to your free local Ollama server — no keys |
-| Models (all 3 for the leaderboard) | small open-weight models via **Ollama** (e.g. `gemma2:2b`, `llama3.2`, `mistral`) | Free, runs on a normal laptop, no GPU strictly required; pick sizes everyone can actually run |
+| Models (all 3 for the leaderboard) | small open-weight models via **Ollama** (e.g. `qwen3.5:2b`, `llama3.2`, `mistral`) | Free, runs on a normal laptop, no GPU strictly required; pick sizes everyone can actually run |
 | Orchestration | `langgraph` | State graph = deterministic DAG + one bounded loop, reproducible traces |
 | RAG | `chromadb` + an embedding model | Simple local vector store; `sentence-transformers` + `faiss-cpu` as an offline fallback |
 | Metrics | `textstat` (readability), `scikit-learn` (Cohen's κ) | Flesch-Kincaid / SMOG, and Verifier-vs-human agreement |
@@ -206,7 +206,7 @@ Jump to: [README.md](README.md) · [PROJECT-PLAN.md](PROJECT-PLAN.md) · [TEAM-N
 
 1. Read [TEAM-NOTES.md](TEAM-NOTES.md) first — how we work and what to get out of the quarter.
 2. Clone the repo, make a virtual environment (or use Colab), then `pip install -r requirements.txt` and `pip install -e .` (the second puts the `clearmed` package on your path).
-3. **Install [Ollama](https://ollama.com/download)** and pull a small local model, e.g. `ollama pull gemma2:2b`. This is completely free — no API key, no signup, no billing. **We are not using any paid API or trial credit for this project**; everyone runs models locally (or on free Colab if your laptop can't handle it). Leave Ollama running, then run `python -m clearmed.pipeline` for one successful local call.
+3. **Install [Ollama](https://ollama.com/download)** and pull a small local model, e.g. `ollama pull qwen3.5:2b`. This is completely free — no API key, no signup, no billing. **We are not using any paid API or trial credit for this project**; everyone runs models locally (or on free Colab if your laptop can't handle it). Leave Ollama running, then run `python -m clearmed.pipeline` for one successful local call.
 4. Download MedAESQA (see `data/README.md`); skim MTSamples and generate a few Synthea patients.
 5. Run `python -m clearmed.eval_harness` and skim `src/clearmed/pipeline.py` to see the pipeline shape.
 6. `nbstripout --install` in the repo so notebook diffs stay clean.

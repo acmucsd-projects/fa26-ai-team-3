@@ -1,0 +1,68 @@
+dataset,id,title,model,error_type,severity,notes
+PLABA,15902691,Muscle cramps,qwen3.5:2b,wrong_fact,medium,"Says history/exercise/blood tests cause cramps; abstract says history, exam, labs help find the cause"
+PLABA,15902691,Muscle cramps,qwen3.5:2b,wrong_frame,low,Treats review article as reader's own case and plan
+PLABA,15902691,Muscle cramps,qwen3.5:2b,addition,low,Adds doctors will 'listen to what sounds when you move'
+PLABA,30838456,SNRIs,qwen3.5:2b,wrong_term,high,Names sertraline/paroxetine/fluoxetine (SSRIs) as SNRIs
+PLABA,30838456,SNRIs,qwen3.5:2b,wrong_number,medium,Calls the 10:1 binding ratio 'an even split'
+PLABA,30838456,SNRIs,qwen3.5:2b,wrong_fact,medium,Says never combine antidepressants of any class; abstract only warns about MAOIs
+PLABA,30838456,SNRIs,qwen3.5:2b,addition,low,Adds neuropathic pain 'from injuries' and 'temporary' blood pressure rise
+PLABA,16445274,Hyperkalemia,qwen3.5:2b,wrong_fact,high,Says insulin+glucose and beta-agonists push potassium out of cells into urine; they move it into cells
+PLABA,16445274,Hyperkalemia,qwen3.5:2b,wrong_fact,medium,Wrong mechanism for diabetes cause (it lowers kidney potassium excretion)
+PLABA,16445274,Hyperkalemia,qwen3.5:2b,wrong_fact,high,Says heart symptoms make it life-threatening; abstract says ECG changes or fast potassium rise
+PLABA,16445274,Hyperkalemia,qwen3.5:2b,addition,low,Adds dialysis
+PLABA,16445274,Hyperkalemia,qwen3.5:2b,omission,medium,"Leaves out sodium polystyrene (+ furosemide, saline) for lowering total body potassium"
+PLABA,9803200,Diabetes screening,qwen3.5:2b,wrong_term,medium,Expands IDDM/NIDDM as 'Induced' / 'Nondiabetic' Diabetes Mellitus
+PLABA,9803200,Diabetes screening,qwen3.5:2b,addition,low,Adds 'in the past it took three blood tests'
+PLABA,9803200,Diabetes screening,qwen3.5:2b,omission,medium,Leaves out that only half of people with diabetes are diagnosed
+PLABA,9803200,Diabetes screening,qwen3.5:2b,addition,medium,Adds that a healthy weight makes blood sugar 'drop naturally'
+PLABA,21636864,Knee cyst valve,qwen3.5:2b,wrong_fact,medium,Valve direction backwards (lets fluid flow joint -> cyst)
+PLABA,21636864,Knee cyst valve,qwen3.5:2b,wrong_fact,medium,Says one patient had valve open unknowingly; doctors failed to find the opening in one patient
+PLABA,21636864,Knee cyst valve,qwen3.5:2b,wrong_frame,low,Talks to reader as a clinic patient; it's an 11-patient study
+PLABA,21636864,Knee cyst valve,qwen3.5:2b,addition,low,"Adds 'popping', 'painless' surgery, infection/bleeding examples"
+PLABA,16127951,Hyperthyroidism,qwen3.5:2b,wrong_fact,high,Says treating thyroiditis symptoms 'usually isn't necessary'; abstract says it's usually enough
+PLABA,16127951,Hyperthyroidism,qwen3.5:2b,wrong_fact,medium,Calls thyroiditis 'a virus' and adds iodine build-up as a cause
+PLABA,16127951,Hyperthyroidism,qwen3.5:2b,wrong_fact,medium,Misstates who gets radioactive iodine (people with no contraindication)
+PLABA,16127951,Hyperthyroidism,qwen3.5:2b,wrong_fact,medium,Says antithyroid drugs block hormone intake; they stop hormone production
+PLABA,16127951,Hyperthyroidism,qwen3.5:2b,omission,low,Leaves out that new therapies are under investigation
+PLABA,15156437,Strep antibiotics,qwen3.5:2b,wrong_number,medium,"Says each study had 2,000+ patients; 2,113 is the total across 9 trials"
+PLABA,15156437,Strep antibiotics,qwen3.5:2b,wrong_number,medium,2.29 odds ratio stated backwards (cephalosporins give 2.29x odds of cure)
+PLABA,15156437,Strep antibiotics,qwen3.5:2b,garbled,medium,Self-contradictory penicillin/cephalosporin sentence
+PLABA,15156437,Strep antibiotics,qwen3.5:2b,addition,low,Adds penicillin allergy and resistance patterns
+PLABA,1000139,Clozapine vs perphenazine,qwen3.5:2b,wrong_term,medium,Expands NA as 'Nerve Growth Factor'; it's noradrenaline
+PLABA,1000139,Clozapine vs perphenazine,qwen3.5:2b,wrong_fact,medium,Says 'doctors proved' it; abstract says hypothesis shown plausible (overclaim)
+PLABA,1000139,Clozapine vs perphenazine,qwen3.5:2b,omission,medium,"Leaves out perphenazine = stronger antipsychotic, weaker sedative"
+PLABA,1000139,Clozapine vs perphenazine,qwen3.5:2b,addition,low,Comments on a typo in the source text
+PLABA,7698623,Foreign bodies,qwen3.5:2b,wrong_frame,medium,Says 242 objects stuck in 'your' esophagus; it's 242 separate cases
+PLABA,7698623,Foreign bodies,qwen3.5:2b,wrong_fact,medium,Puts meat impaction in the stomach; it's the esophagus
+PLABA,7698623,Foreign bodies,qwen3.5:2b,garbled,medium,'without anesthesia in 75% of your cases (25%)'
+PLABA,7698623,Foreign bodies,qwen3.5:2b,addition,medium,Adds objects 'can hurt your heart' and watch throat 'for a day or two'
+PLABA,7698623,Foreign bodies,qwen3.5:2b,omission,medium,Leaves out 98.8% endoscopic removal and that button batteries usually pass in the stomach
+PLABA,3068693,Hand pain,qwen3.5:2b,wrong_term,medium,Calls reflex sympathetic dystrophy 'phantom limb pain'
+PLABA,3068693,Hand pain,qwen3.5:2b,wrong_fact,high,"Says ice + keep still 'to stop bleeding'; abstract says immobilize, then exercise"
+PLABA,3068693,Hand pain,qwen3.5:2b,addition,medium,"Adds 2-3 day / few-week timelines, OT, and rheumatologist (abstract: hand surgeon)"
+PLABA,3068693,Hand pain,qwen3.5:2b,omission,medium,Leaves out cellulitis/paronychia/felon and neurologist referral
+PLABA,15902691,Muscle cramps,gemma2:2b,wrong_frame,low,Treats review article as reader's own note
+PLABA,15902691,Muscle cramps,gemma2:2b,omission,medium,Leaves out nerve origin and that other drugs are likely as effective as quinine
+PLABA,30838456,SNRIs,gemma2:2b,wrong_number,medium,Says 'pretty even way' while giving a 10:1 ratio
+PLABA,30838456,SNRIs,gemma2:2b,omission,high,Says 'certain other medications' instead of naming MAOIs for serotonin syndrome
+PLABA,16445274,Hyperkalemia,gemma2:2b,omission,medium,"Leaves out that IV calcium doesn't lower potassium, and the beta-agonist option"
+PLABA,16445274,Hyperkalemia,gemma2:2b,omission,medium,"Leaves out common triggers (new meds, illness, dehydration) and diabetes cause"
+PLABA,9803200,Diabetes screening,gemma2:2b,wrong_fact,high,Says start screening at 45 'if at risk'; at-risk people start earlier
+PLABA,9803200,Diabetes screening,gemma2:2b,wrong_fact,medium,Lists high cholesterol; abstract says high triglycerides
+PLABA,9803200,Diabetes screening,gemma2:2b,omission,low,Leaves out impaired glucose as a risk factor
+PLABA,9803200,Diabetes screening,gemma2:2b,omission,medium,Makes diagnosis one fasting check; it takes two abnormal tests
+PLABA,21636864,Knee cyst valve,gemma2:2b,wrong_frame,low,Treats study as reader's own surgery; never says 11 patients
+PLABA,21636864,Knee cyst valve,gemma2:2b,wrong_number,low,Says 'most' patients improved; all did
+PLABA,21636864,Knee cyst valve,gemma2:2b,wrong_fact,medium,Says they couldn't fix a not-fully-open valve; they failed to find the opening in one patient
+PLABA,16127951,Hyperthyroidism,gemma2:2b,wrong_term,medium,Says TSH test measures thyroid hormone; TSH is the pituitary signal
+PLABA,16127951,Hyperthyroidism,gemma2:2b,omission,medium,Leaves out radioactive iodine (US treatment of choice)
+PLABA,16127951,Hyperthyroidism,gemma2:2b,omission,low,Leaves out toxic adenoma and when surgery is used
+PLABA,15156437,Strep antibiotics,gemma2:2b,wrong_frame,low,Treats study as reader's own tonsillitis treatment
+PLABA,15156437,Strep antibiotics,gemma2:2b,omission,medium,"Leaves out 9 trials, 2,113 patients, 2.29 odds, adults with strep"
+PLABA,15156437,Strep antibiotics,gemma2:2b,addition,medium,Adds penicillin 'often leads to more issues'
+PLABA,1000139,Clozapine vs perphenazine,gemma2:2b,omission,low,Vague 'certain parts of the brain' instead of which signals each blocks
+PLABA,1000139,Clozapine vs perphenazine,gemma2:2b,omission,medium,"Leaves out perphenazine = stronger antipsychotic, weaker sedative"
+PLABA,7698623,Foreign bodies,gemma2:2b,wrong_frame,medium,Says 'you have a lot of small objects stuck'; it's 242 cases
+PLABA,7698623,Foreign bodies,gemma2:2b,omission,medium,Leaves out 98.8% success rate and that coins/batteries usually pass
+PLABA,3068693,Hand pain,gemma2:2b,omission,medium,"Leaves out nerve and whole-body causes (carpal tunnel, RA, vasculitis, HPOA, RSD)"
+PLABA,3068693,Hand pain,gemma2:2b,omission,low,Leaves out cellulitis/paronychia/felon
