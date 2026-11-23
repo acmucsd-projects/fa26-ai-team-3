@@ -37,5 +37,6 @@ def call_model(system: str, user: str, model: str = DEFAULT_MODEL, temperature: 
             {"role": "user", "content": user},
         ],
         temperature=temperature,
+        think=False,
     )
     return resp["choices"][0]["message"]["content"]
