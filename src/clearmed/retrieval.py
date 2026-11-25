@@ -1,25 +1,72 @@
-"""RAG index for the Simplifier (owner: M2).
+from pathlib import Path
 
-Build a ChromaDB collection over the MedlinePlus lay-language glossary + authoritative lay-health
-guidelines, then `retrieve()` plain-language definitions for the terms in a source document.
-
-Owner TODO: pick a chunking strategy, build + persist the index, measure retrieval hit quality.
-
-Embeddings: use a FREE, local embedding model — either ChromaDB's bundled default
-(no setup needed, runs locally) or `sentence-transformers` explicitly. Do NOT wire in a
-hosted/paid embeddings API (e.g. OpenAI embeddings) — this project spends nothing, ever.
-"""
-from __future__ import annotations
+import chromadb
+from chromadb.utils import embedding_functions
 
 PERSIST_DIR = "data/chroma"
 COLLECTION = "medlineplus_glossary"
+MODEL_NAME = "all-MiniLM-L6-v2"
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+
+def _embedding_function():
+    return embedding_functions.SentenceTransformerEmbeddingFunction(
+        model_name=MODEL_NAME
+    )
 
 
 def build_index(docs: list[str]) -> None:
-    """Embed `docs` and persist a ChromaDB collection to PERSIST_DIR. Not implemented yet."""
-    raise NotImplementedError("M2: build the ChromaDB glossary index here (Week 3-4).")
+    if not docs:
+        raise ValueError("Cannot index an empty list.")
+
+    client = chromadb.PersistentClient(
+        path=str(PROJECT_ROOT / PERSIST_DIR)
+    )
+
+    existing = client.list_collections()
+    names = {
+        item if isinstance(item, str) else item.name
+        for item in existing
+    }
+
+    if COLLECTION in names:
+        client.delete_collection(name=COLLECTION)
+
+    collection = client.create_collection(
+        name=COLLECTION,
+        embedding_function=_embedding_function()
+    )
+
+    collection.add(
+        ids=[f"glossary-{i}" for i in range(len(docs))],
+        documents=docs
+    )
 
 
-def retrieve(query: str, k: int = 5) -> list[str]:
-    """Return the top-`k` plain-language definition snippets for `query`. Not implemented yet."""
-    raise NotImplementedError("M2: query the ChromaDB collection here.")
+def retrieve(query: str, k: int = 3) -> list[str]:
+    if not query.strip():
+        raise ValueError("Query cannot be empty.")
+    if k < 1:
+        raise ValueError("k must be positive.")
+
+    client = chromadb.PersistentClient(
+        path=str(PROJECT_ROOT / PERSIST_DIR)
+    )
+
+    collection = client.get_collection(
+        name=COLLECTION,
+        embedding_function=_embedding_function()
+    )
+
+    if collection.count() == 0:
+        return []
+
+    results = collection.query(
+        query_texts=[query],
+        n_results=min(k, collection.count()),
+        include=["documents"]
+    )
+
+    return results["documents"][0] or []
+

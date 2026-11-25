@@ -6,6 +6,20 @@ We will attempt to rewrite that text in plain language a patient can actually fo
 
 ---
 
+## Quick Start
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt && pip install -e .
+ollama pull gemma2:2b          # free local model, no API key
+python -m clearmed.pipeline    # one successful local call
+python -m clearmed.eval_harness
+```
+
+Full setup steps are in [Setup and Installation](#setup-and-installation).
+
+---
+
 ## The Challenge
 
 ### The Core Research Question
@@ -61,7 +75,7 @@ ClearMed examines both of these issues, taking de-identified clinical text and r
 - **Weeks 5–6 — Analysis:** ablations (which agents matter?), error analysis, the model leaderboard, then freeze all numbers.
 - **After:** technical report, hosted demo, final presentation, portfolio writeups.
 
-> Full week-by-week checklist with per-person owners -> **[PROJECT-PLAN.md](PROJECT-PLAN.md)**. Mirror it on a GitHub Projects board: **Projects** tab -> **New project** -> **Board** -> a column per phase.
+> Full week-by-week checklist with per-person owners -> **[PROJECT-PLAN.md](notes/PROJECT-PLAN.md)**. Mirror it on a GitHub Projects board: **Projects** tab -> **New project** -> **Board** -> a column per phase.
 
 ---
 
@@ -146,7 +160,7 @@ Two decisions that will save weeks:
 | Data / viz | `pandas`, `numpy`, `matplotlib`, `seaborn`, `datasets` | EDA and every chart in the notebooks |
 | Notebooks | JupyterLab + `nbstripout` | All EDA / calibration / ablation work; `nbstripout` keeps diffs reviewable |
 | Demo | `gradio` on Hugging Face Spaces (free) | One-file app, free hosting; Cloud Run if you want a cloud-native target |
-| Repo | GitHub + Projects board | Code review on small PRs; board mirrors [PROJECT-PLAN.md](PROJECT-PLAN.md) |
+| Repo | GitHub + Projects board | Code review on small PRs; board mirrors [PROJECT-PLAN.md](notes/PROJECT-PLAN.md) |
 
 **Other docs & tutorials:**
 - `textstat` readability library — https://pypi.org/project/textstat/
@@ -159,38 +173,64 @@ Two decisions that will save weeks:
 
 ---
 
-## What's in This Repository
+## Repository Structure
 
 ```
-clearmed/
-├── README.md               - you are here
-├── PROJECT-PLAN.md          - 6-week checklist, per-person owners
-├── TEAM-NOTES.md            - how this team works + what to get out of it (read first)
-├── requirements.txt         - dependencies
-├── pyproject.toml           - `pip install -e .` -> makes `clearmed` importable
+fa26-ai-team-3/
+├── README.md                  - you are here
+├── CLAUDE.md                  - rules for AI assistants (MedAESQA is off limits)
+├── config.json                - project config
+├── pyproject.toml             - `pip install -e .` makes `clearmed` importable
+├── requirements.txt           - dependencies
+├── test_retrieval.py          - quick check of the retrieval index
 │
-├── src/clearmed/         - the package: all shared, reusable code
-│   ├── models.py            - one wrapper for every model provider (litellm)
-│   ├── schemas.py           - the atom / verdict JSON contracts
-│   ├── retrieval.py         - ChromaDB glossary index (RAG for the Simplifier)
-│   ├── eval_harness.py      - readability + faithfulness metrics
-│   ├── pipeline.py          - the LangGraph graph wiring the agents together
-│   └── agents/              - one module per agent
-│       ├── extractor.py     ·  simplifier.py  ·  verifier.py
-│       └── refiner.py       ·  readability.py
+├── src/clearmed/              - the package: all shared, reusable code
+│   ├── models.py              - one wrapper for every model provider (litellm)
+│   ├── schemas.py             - atom / verdict JSON contracts
+│   ├── retrieval.py           - ChromaDB glossary index (RAG for the Simplifier)
+│   ├── eval_harness.py        - readability + faithfulness metrics
+│   ├── pipeline.py            - LangGraph graph wiring the agents together
+│   └── agents/                - one module per agent
+│       ├── extractor.py
+│       ├── simplifier.py
+│       ├── verifier.py
+│       ├── refiner.py
+│       └── readability.py
 │
-├── notebooks/               - one per person; EDA / calibration / ablations / analysis
-│   ├── 01_data_eda.ipynb            (M1)   04_leaderboard_ablations.ipynb (M4)
-│   ├── 02_retrieval.ipynb           (M2)   05_readability.ipynb          (M5)
-│   └── 03_verifier_calibration.ipynb (M3)   06_error_analysis.ipynb      (shared)
+├── notebooks/                 - one per person; EDA / calibration / ablations / analysis
+│   ├── 01_data_eda.ipynb              (M1)
+│   ├── 02_retrieval.ipynb             (M2)
+│   ├── 03_verifier_calibration.ipynb  (M3)
+│   ├── 04_leaderboard_ablations.ipynb (M4)
+│   ├── 04a_single_llm_baseline.ipynb  single-LLM baseline to beat
+│   ├── 05_readability.ipynb           (M5)
+│   └── 06_error_analysis.ipynb        (shared)
 │
-├── app/demo.py              - Gradio demo (Hugging Face Spaces / Cloud Run)
-└── data/                    - datasets live here (see data/README.md)
+├── scripts/
+│   └── evaluate_retrieval.py  - retrieval evaluation script
+│
+├── results/
+│   └── baseline_log.csv       - single-LLM baseline run log
+│
+├── data/                      - datasets (see data/README.md)
+│   ├── mtsamples.csv          - MTSamples clinical reports
+│   ├── m2/m2-glossary.json    - M2 plain-language glossary used for retrieval
+│   └── (MedAESQA ground truth - never edited or inspected; see CLAUDE.md)
+│
+├── app/
+│   └── demo.py                - Gradio demo (Hugging Face Spaces / Cloud Run)
+│
+├── notes/
+│   ├── PROJECT-PLAN.md        - 6-week checklist, per-person owners
+│   ├── TEAM-NOTES.md          - how this team works (read first)
+│   └── descforstudentapps.md  - project blurb for applications
+│
+└── week1/                     - week 1 instructions and scratch files
 ```
 
-**How it fits together:** `pipeline.py` imports each `agents/*.py`, which import `models.py` for LLM calls and `schemas.py` for the data shapes. Notebooks and `app/demo.py` `import` from the `clearmed` package rather than redefining logic — so the heavy code has one home and the notebooks stay focused on data + visuals.
+**How it fits together:** `pipeline.py` imports each `agents/*.py`, which import `models.py` for LLM calls and `schemas.py` for the data shapes. Notebooks, scripts and `app/demo.py` import from the `clearmed` package rather than redefining logic, so the heavy code has one home and the notebooks stay focused on data and visuals.
 
-Jump to: [README.md](README.md) · [PROJECT-PLAN.md](PROJECT-PLAN.md) · [TEAM-NOTES.md](TEAM-NOTES.md) · [src/clearmed/](src/clearmed) · [notebooks/](notebooks) · [app/demo.py](app/demo.py) · [data/](data) · [requirements.txt](requirements.txt) · [pyproject.toml](pyproject.toml)
+Jump to: [notes/PROJECT-PLAN.md](notes/PROJECT-PLAN.md) · [notes/TEAM-NOTES.md](notes/TEAM-NOTES.md) · [src/clearmed/](src/clearmed) · [notebooks/](notebooks) · [app/demo.py](app/demo.py) · [data/](data) · [requirements.txt](requirements.txt) · [pyproject.toml](pyproject.toml)
 
 ---
 
@@ -204,7 +244,7 @@ Jump to: [README.md](README.md) · [PROJECT-PLAN.md](PROJECT-PLAN.md) · [TEAM-N
 
 ## Setup and Installation
 
-1. Read [TEAM-NOTES.md](TEAM-NOTES.md) first — how we work and what to get out of the quarter.
+1. Read [notes/TEAM-NOTES.md](notes/TEAM-NOTES.md) first — how we work and what to get out of the quarter.
 2. Clone the repo, make a virtual environment (or use Colab), then `pip install -r requirements.txt` and `pip install -e .` (the second puts the `clearmed` package on your path).
 3. **Install [Ollama](https://ollama.com/download)** and pull a small local model, e.g. `ollama pull qwen3.5:2b`. This is completely free — no API key, no signup, no billing. **We are not using any paid API or trial credit for this project**; everyone runs models locally (or on free Colab if your laptop can't handle it). Leave Ollama running, then run `python -m clearmed.pipeline` for one successful local call.
 4. Download MedAESQA (see `data/README.md`); skim MTSamples and generate a few Synthea patients.
