@@ -8,3 +8,12 @@ timestamp,file,step,function,model,seconds,status,notes
 2026-11-18T19:57:08,refiner.py,m4,refine,qwen3.5:2b,11.63,ok,PLABA 1000139 baseline draft
 2026-11-18T19:57:11,refiner.py,m4,refine,qwen3.5:2b,2.94,ok,PLABA 16445274 baseline draft
 2026-11-18T19:57:12,refiner.py,m4,refine,qwen3.5:2b,0.55,ok,PLABA 9803200 baseline draft
+2026-11-25T15:36:40,refiner.py,m4,refine,qwen3.5:2b,0.32,ok,"furosemide: wrong frequency, no source"
+2026-11-25T15:36:40,refiner.py,m4,refine,qwen3.5:2b,0.32,ok,furosemide: wrong frequency
+2026-11-25T15:36:41,refiner.py,m4,refine,qwen3.5:2b,0.59,ok,furosemide: missing dose
+2026-11-25T15:36:42,refiner.py,m4,refine,qwen3.5:2b,0.94,ok,furosemide: wrong frequency + missing dose
+2026-11-25T15:36:42,refiner.py,m4,refine,qwen3.5:2b,0.28,ok,"furosemide: fix one sentence, keep the other"
+2026-11-25T15:36:42,refiner.py,m4,refine,qwen3.5:2b,0.0,ok,furosemide: faithful (no model call)
+2026-11-25T15:36:49,refiner.py,m4,refine,qwen3.5:2b,6.99,ok,PLABA 1000139 baseline draft
+2026-11-25T15:36:53,refiner.py,m4,refine,qwen3.5:2b,3.32,ok,PLABA 16445274 baseline draft
+2026-11-25T15:36:53,refiner.py,m4,refine,qwen3.5:2b,0.6,ok,PLABA 9803200 baseline draft
